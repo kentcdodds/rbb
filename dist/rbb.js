@@ -1,3 +1,5 @@
+//! rbb version 1.0.0 built with ♥ by Kent C. Dodds (ó ì_í)=óò=(ì_í ò)
+
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -65,6 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	module.exports = rbb;
 	module.exports.off = off;
+	module.exports.version = ("1.0.0");
 	
 	
 	function rbb() {

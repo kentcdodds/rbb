@@ -4,6 +4,7 @@ let el;
 
 module.exports = rbb;
 module.exports.off = off;
+module.exports.version = VERSION;
 
 
 function rbb({

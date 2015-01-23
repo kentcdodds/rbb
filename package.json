@@ -2,7 +2,7 @@
   "name": "rbb",
   "version": "1.0.0",
   "description": "Random Beautiful Background (rbb). Good for login screens.",
-  "main": "index.js",
+  "main": "dist/rbb.js",
   "dependencies": {},
   "devDependencies": {
     "6to5-loader": "^2.0.0",
