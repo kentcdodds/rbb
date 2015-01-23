@@ -17,5 +17,12 @@ rbb({
   el: document.body,
   images: [ /* your images */ ]
 });
+
+// note, with webpack's url-loader, this is totally possible...
+// But it kinda breaks Chrome DevTools. Try it out. It's kinda fun
+rbb([
+  require('./sweet_background_images/sweet.png'),
+  // ..etc.
+]);
 `
 };
