@@ -1,6 +1,8 @@
 module.exports = {
   title: 'Usage',
   example: `
+// get by downloading from github or via: npm install rbb
+
 // Get the rbb function
 // CommonJS style
 var rbb = require('rbb');

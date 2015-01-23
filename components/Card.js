@@ -1,9 +1,11 @@
 /** @jsx React.DOM */
 var React = require('react');
+var rbbVersion = require('rbb').version;
 
 var mui = require('material-ui');
 var Paper = mui.Paper;
 var Button = mui.RaisedButton;
+var Icon = mui.Icon;
 
 var ReactStyle = require('react-style');
 var CodeExample = require('./CodeExample');
@@ -47,8 +49,7 @@ var codeExamples = examples.map(function(example, index) {
   var codeExampleStyles = ReactStyle({
     marginTop: '30px',
     marginRight: `-${contentPadding}px`,
-    marginLeft: `-${contentPadding}px`,
-    marginBottom: index !== (examples.length - 1) ? undefined : `-${contentPadding}px`
+    marginLeft: `-${contentPadding}px`
   });
   return (
     <div styles={marginTopMedium}>
@@ -72,6 +73,14 @@ module.exports = React.createClass({
               <Button key="toggleBackground" label="Toggle Background" onClick={this.props.toggleBackground} />
             </div>
           {codeExamples}
+          </div>
+          <div style={{marginBottom: '30px'}}>
+            rbb version {rbbVersion} built with ♥ by Kent C. Dodds (ó ì_í)=óò=(ì_í ò)
+            <div style={{marginTop: '10px'}}>
+              <a href="https://github.com/kentcdodds/rbb">
+                <Icon icon="mui-icon-github" />
+              </a>
+            </div>
           </div>
         </Paper>
       </div>

@@ -9,7 +9,7 @@ if (prodMode) {
 }
 
 var exclude = /node_modules|bower_components/;
-var rbb = path.join(__dirname, '../index.js');
+var rbb = path.join(__dirname, '../dist/rbb.js');
 
 var baseEnvVars = {
   ON_DEV: false,
