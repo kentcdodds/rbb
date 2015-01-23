@@ -2,8 +2,9 @@ var gulp = require('gulp');
 var deploy = require('gulp-gh-pages');
 
 gulp.task('deploy', function () {
-  return gulp.src('./site/**/*')
+  return gulp.src(['./site/**/*', '!**/node_modules/**'])
     .pipe(deploy({
+      cacheDir: '../foo',
       message: 'Update ' + Date.now() + ' ' + getRandomEmoji()
     }));
 });
