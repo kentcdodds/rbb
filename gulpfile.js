@@ -4,8 +4,7 @@ var deploy = require('gulp-gh-pages');
 gulp.task('deploy', function () {
   return gulp.src('./site/**/*')
     .pipe(deploy({
-      push: false,
-      message: 'Update [timestamp] ' + getRandomEmoji()
+      message: 'Update ' + Date.now() + ' ' + getRandomEmoji()
     }));
 });
 
