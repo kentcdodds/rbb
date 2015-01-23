@@ -1,0 +1,34 @@
+{
+  "name": "rbb",
+  "version": "1.0.0",
+  "description": "Random Beautiful Background (rbb). Good for login screens.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "6to5-loader": "^2.0.0",
+    "webpack": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:unminified": "webpack -d --output-file rbb.js",
+    "build:minified": "webpack --optimize-minimize --optimize-occurence-order --output-file rbb.min.js --devtool source-map",
+    "build": "npm run build:unminified && npm run build:minified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kentcdodds/rbb"
+  },
+  "keywords": [
+    "random",
+    "images",
+    "background",
+    "beautiful",
+    "login"
+  ],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kent.doddsfamily.us)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/rbb/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/rbb"
+}
