@@ -4,6 +4,7 @@ module.exports = {
 rbb(6);
 // this argument would require the following file structure:
 //  public
+//  ├── index.html
 //  └── rbb_backgrounds
 //      ├── bg0.png
 //      ├── bg1.png
