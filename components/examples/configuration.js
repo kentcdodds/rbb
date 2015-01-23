@@ -3,7 +3,7 @@ module.exports = {
   example: `
 var rbb = require('rbb');
 rbb({
-  root: 'path/to/my_rbb_backgrounds', // defaults to 'rbb_backgrouns'
+  root: 'path/to/my_rbb_backgrounds', // defaults to 'rbb_backgrounds'
   count: 6, // required
   extension: 'jpg', // optional, defaults to png
   prefix: 'bg', // optional, defaults to bg
