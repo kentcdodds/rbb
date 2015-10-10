@@ -8,7 +8,7 @@
     "6to5-loader": "2.0.0",
     "webpack": "1.12.2",
     "gulp": "3.9.0",
-    "gulp-gh-pages": "0.4.0"
+    "gulp-gh-pages": "0.5.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
